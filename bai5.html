@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star</title>
+    <script>
+        let array1 = new Array("Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus");
+        let array2 = new Array("Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo");
+        let check = false;
+        let index = 0;
+        let input = prompt("Tìm: ");
+        function myFunc(str) {
+            for (let i = 0; i < array1.length; i++) {
+                if (input === array1[i]) {
+                    index = i;
+                    check = true;
+                    break;
+                }
+            }
+            if (check) {
+                alert(array2[index]);
+            } else {
+                alert("Not found!");
+            }
+        }
+        myFunc(input);
+    </script>
+</head>
+<body>
+<script>
+
+</script>
+</body>
+</html>
